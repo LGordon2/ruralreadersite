@@ -17,6 +17,7 @@
 
   <!-- Latest compiled and minified JavaScript -->
   <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+  <script src="smooth-scroll.js"></script>
 </head>
 <body data-spy="scroll" data-target=".affix">
   <div id="header-img"></div>
@@ -32,42 +33,74 @@
   <div class="container">
     <div id="main-content">
       <article id="the-hobbit">
-        <h1>The Hobbit</h1>
-        <h4>by <span id="author-name">John Martin</span></h4>
+        <section class="article-header">
+          <h1>The Hobbit</h1>
+          <div class="author-section">
+            <div class="avatar me"></div>
+            <div class="author-name">
+              <h4>by <span id="author-name">John Martin</span></h4>
+            </div>
+          </div>
+        </section>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a pellentesque lectus. Praesent et nisi porttitor, sollicitudin sapien ut, aliquet velit. Donec varius purus lacus, sed consequat mauris aliquet ac. Suspendisse sit amet lobortis nisl. Morbi pellentesque enim enim, eu dignissim magna tincidunt vitae. Aliquam fringilla accumsan eleifend. Mauris ut leo consectetur, posuere urna vel, tincidunt tortor. Proin vel magna rutrum, mollis mauris ut, posuere velit. Donec nulla arcu, fermentum varius rhoncus id, accumsan ut nunc. In id egestas purus. Fusce gravida libero non mattis consectetur. Quisque tempor condimentum vulputate.</p>
+        <div class="pull-right picture-placeholder"></div>
         <p>Donec a molestie libero. Quisque mollis iaculis erat nec iaculis. In adipiscing turpis non eleifend ullamcorper. Nunc ultricies dictum neque pretium auctor. Suspendisse potenti. Sed commodo lacus elit, et vehicula justo lacinia at. Proin orci orci, ullamcorper sit amet elit ut, ornare feugiat felis. Duis ac accumsan risus. Proin placerat sit amet purus et facilisis. Curabitur erat urna, vehicula nec malesuada in, suscipit hendrerit mi. Nulla eu nibh ut neque tristique posuere quis et metus. Pellentesque pulvinar adipiscing blandit. Sed quis nunc elit. Sed fermentum risus tincidunt metus luctus, eget tempor erat accumsan. Integer id nunc dictum, molestie quam eleifend, feugiat lacus.</p>
         <p>Praesent sit amet condimentum est. Nullam nulla nisl, vehicula a quam mollis, blandit lobortis turpis. In lacinia pharetra accumsan. Nullam rutrum erat ac nisl cursus, ac imperdiet metus varius. Suspendisse porttitor fringilla dolor, sed venenatis ligula suscipit a. Aenean ligula enim, euismod ut ornare et, dictum nec mauris. Nullam cursus, augue id ultricies sagittis, libero libero sagittis quam, vel fermentum nisl justo vitae magna. Duis in felis sapien. Ut vel lacus fringilla, adipiscing ipsum ac, vestibulum nisi. Pellentesque commodo lacus eget erat commodo convallis. Aenean sagittis lorem quis leo blandit varius.</p>
         <p>Curabitur blandit quam pharetra, cursus sem ac, interdum leo. Duis faucibus quam eu iaculis scelerisque. Curabitur blandit ante sit amet elit ullamcorper, at dignissim justo fermentum. Ut quis turpis sed lorem ultrices viverra. Curabitur nunc nunc, adipiscing sed consequat nec, pretium non lorem. Integer semper enim ut semper mattis. Donec semper eget enim vitae hendrerit. Vivamus lobortis interdum placerat. Nullam laoreet viverra semper. Ut ac luctus lectus. Maecenas quis hendrerit erat. Aenean consectetur dolor a fringilla dignissim. Mauris vel tempor ligula.</p>
         <p>Etiam semper dapibus est eu condimentum. Vivamus pretium ante eros, sed venenatis nunc sollicitudin et. Morbi et dui adipiscing, congue sem sit amet, fermentum massa. Vivamus semper aliquam risus, eget pretium est lacinia ut. Etiam eu luctus nulla. Fusce mollis pellentesque sem, ac vestibulum turpis mollis eget. In et laoreet risus, ut sodales augue.</p>
       </article>
       <article id="fellowship">
-        <h1>The Fellowship of the Ring</h1>
-        <h4>by <span id="author-name">J.R.R. Martin</span></h4>
+        <section class="article-header">
+          <h1>The Fellowship of the Ring</h1>
+          <div class="author-section">
+            <div class="avatar me"></div>
+            <div class="author-name">
+              <h4>by <span id="author-name">J.R.R. Martin</span></h4>
+            </div>
+          </div>
+        </section>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a pellentesque lectus. Praesent et nisi porttitor, sollicitudin sapien ut, aliquet velit. Donec varius purus lacus, sed consequat mauris aliquet ac. Suspendisse sit amet lobortis nisl. Morbi pellentesque enim enim, eu dignissim magna tincidunt vitae. Aliquam fringilla accumsan eleifend. Mauris ut leo consectetur, posuere urna vel, tincidunt tortor. Proin vel magna rutrum, mollis mauris ut, posuere velit. Donec nulla arcu, fermentum varius rhoncus id, accumsan ut nunc. In id egestas purus. Fusce gravida libero non mattis consectetur. Quisque tempor condimentum vulputate.</p>
+        <div class="pull-left picture-placeholder"></div>
         <p>Donec a molestie libero. Quisque mollis iaculis erat nec iaculis. In adipiscing turpis non eleifend ullamcorper. Nunc ultricies dictum neque pretium auctor. Suspendisse potenti. Sed commodo lacus elit, et vehicula justo lacinia at. Proin orci orci, ullamcorper sit amet elit ut, ornare feugiat felis. Duis ac accumsan risus. Proin placerat sit amet purus et facilisis. Curabitur erat urna, vehicula nec malesuada in, suscipit hendrerit mi. Nulla eu nibh ut neque tristique posuere quis et metus. Pellentesque pulvinar adipiscing blandit. Sed quis nunc elit. Sed fermentum risus tincidunt metus luctus, eget tempor erat accumsan. Integer id nunc dictum, molestie quam eleifend, feugiat lacus.</p>
         <p>Praesent sit amet condimentum est. Nullam nulla nisl, vehicula a quam mollis, blandit lobortis turpis. In lacinia pharetra accumsan. Nullam rutrum erat ac nisl cursus, ac imperdiet metus varius. Suspendisse porttitor fringilla dolor, sed venenatis ligula suscipit a. Aenean ligula enim, euismod ut ornare et, dictum nec mauris. Nullam cursus, augue id ultricies sagittis, libero libero sagittis quam, vel fermentum nisl justo vitae magna. Duis in felis sapien. Ut vel lacus fringilla, adipiscing ipsum ac, vestibulum nisi. Pellentesque commodo lacus eget erat commodo convallis. Aenean sagittis lorem quis leo blandit varius.</p>
         <p>Curabitur blandit quam pharetra, cursus sem ac, interdum leo. Duis faucibus quam eu iaculis scelerisque. Curabitur blandit ante sit amet elit ullamcorper, at dignissim justo fermentum. Ut quis turpis sed lorem ultrices viverra. Curabitur nunc nunc, adipiscing sed consequat nec, pretium non lorem. Integer semper enim ut semper mattis. Donec semper eget enim vitae hendrerit. Vivamus lobortis interdum placerat. Nullam laoreet viverra semper. Ut ac luctus lectus. Maecenas quis hendrerit erat. Aenean consectetur dolor a fringilla dignissim. Mauris vel tempor ligula.</p>
         <p>Etiam semper dapibus est eu condimentum. Vivamus pretium ante eros, sed venenatis nunc sollicitudin et. Morbi et dui adipiscing, congue sem sit amet, fermentum massa. Vivamus semper aliquam risus, eget pretium est lacinia ut. Etiam eu luctus nulla. Fusce mollis pellentesque sem, ac vestibulum turpis mollis eget. In et laoreet risus, ut sodales augue.</p>
       </article>
       <article id="two-towers">
-        <h1>The Two Towers</h1>
-        <h4>by <span id="author-name">J.R.R. Martin</span></h4>
+        <section class="article-header">
+          <h1>The Two Towers</h1>
+          <div class="author-section">
+            <div class="avatar me"></div>
+            <div class="author-name">
+              <h4>by <span id="author-name">J.R.R. Martin</span></h4>
+            </div>
+          </div>
+        </section>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a pellentesque lectus. Praesent et nisi porttitor, sollicitudin sapien ut, aliquet velit. Donec varius purus lacus, sed consequat mauris aliquet ac. Suspendisse sit amet lobortis nisl. Morbi pellentesque enim enim, eu dignissim magna tincidunt vitae. Aliquam fringilla accumsan eleifend. Mauris ut leo consectetur, posuere urna vel, tincidunt tortor. Proin vel magna rutrum, mollis mauris ut, posuere velit. Donec nulla arcu, fermentum varius rhoncus id, accumsan ut nunc. In id egestas purus. Fusce gravida libero non mattis consectetur. Quisque tempor condimentum vulputate.</p>
+        <div class="pull-right picture-placeholder"></div>
         <p>Donec a molestie libero. Quisque mollis iaculis erat nec iaculis. In adipiscing turpis non eleifend ullamcorper. Nunc ultricies dictum neque pretium auctor. Suspendisse potenti. Sed commodo lacus elit, et vehicula justo lacinia at. Proin orci orci, ullamcorper sit amet elit ut, ornare feugiat felis. Duis ac accumsan risus. Proin placerat sit amet purus et facilisis. Curabitur erat urna, vehicula nec malesuada in, suscipit hendrerit mi. Nulla eu nibh ut neque tristique posuere quis et metus. Pellentesque pulvinar adipiscing blandit. Sed quis nunc elit. Sed fermentum risus tincidunt metus luctus, eget tempor erat accumsan. Integer id nunc dictum, molestie quam eleifend, feugiat lacus.</p>
         <p>Praesent sit amet condimentum est. Nullam nulla nisl, vehicula a quam mollis, blandit lobortis turpis. In lacinia pharetra accumsan. Nullam rutrum erat ac nisl cursus, ac imperdiet metus varius. Suspendisse porttitor fringilla dolor, sed venenatis ligula suscipit a. Aenean ligula enim, euismod ut ornare et, dictum nec mauris. Nullam cursus, augue id ultricies sagittis, libero libero sagittis quam, vel fermentum nisl justo vitae magna. Duis in felis sapien. Ut vel lacus fringilla, adipiscing ipsum ac, vestibulum nisi. Pellentesque commodo lacus eget erat commodo convallis. Aenean sagittis lorem quis leo blandit varius.</p>
         <p>Curabitur blandit quam pharetra, cursus sem ac, interdum leo. Duis faucibus quam eu iaculis scelerisque. Curabitur blandit ante sit amet elit ullamcorper, at dignissim justo fermentum. Ut quis turpis sed lorem ultrices viverra. Curabitur nunc nunc, adipiscing sed consequat nec, pretium non lorem. Integer semper enim ut semper mattis. Donec semper eget enim vitae hendrerit. Vivamus lobortis interdum placerat. Nullam laoreet viverra semper. Ut ac luctus lectus. Maecenas quis hendrerit erat. Aenean consectetur dolor a fringilla dignissim. Mauris vel tempor ligula.</p>
         <p>Etiam semper dapibus est eu condimentum. Vivamus pretium ante eros, sed venenatis nunc sollicitudin et. Morbi et dui adipiscing, congue sem sit amet, fermentum massa. Vivamus semper aliquam risus, eget pretium est lacinia ut. Etiam eu luctus nulla. Fusce mollis pellentesque sem, ac vestibulum turpis mollis eget. In et laoreet risus, ut sodales augue.</p>
       </article>
       <article id="king">
-        <h1>The Return of the King</h1>
-        <h4>by <span id="author-name">J.R.R. Martin</span></h4>
+        <section class="article-header">
+          <h1>The Return of the King</h1>
+          <div class="author-section">
+            <div class="avatar me"></div>
+            <div class="author-name">
+              <h4>by <span id="author-name">J.R.R. Martin</span></h4>
+            </div>
+          </div>
+        </section>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a pellentesque lectus. Praesent et nisi porttitor, sollicitudin sapien ut, aliquet velit. Donec varius purus lacus, sed consequat mauris aliquet ac. Suspendisse sit amet lobortis nisl. Morbi pellentesque enim enim, eu dignissim magna tincidunt vitae. Aliquam fringilla accumsan eleifend. Mauris ut leo consectetur, posuere urna vel, tincidunt tortor. Proin vel magna rutrum, mollis mauris ut, posuere velit. Donec nulla arcu, fermentum varius rhoncus id, accumsan ut nunc. In id egestas purus. Fusce gravida libero non mattis consectetur. Quisque tempor condimentum vulputate.</p>
+        <div class="pull-left picture-placeholder"></div>
         <p>Donec a molestie libero. Quisque mollis iaculis erat nec iaculis. In adipiscing turpis non eleifend ullamcorper. Nunc ultricies dictum neque pretium auctor. Suspendisse potenti. Sed commodo lacus elit, et vehicula justo lacinia at. Proin orci orci, ullamcorper sit amet elit ut, ornare feugiat felis. Duis ac accumsan risus. Proin placerat sit amet purus et facilisis. Curabitur erat urna, vehicula nec malesuada in, suscipit hendrerit mi. Nulla eu nibh ut neque tristique posuere quis et metus. Pellentesque pulvinar adipiscing blandit. Sed quis nunc elit. Sed fermentum risus tincidunt metus luctus, eget tempor erat accumsan. Integer id nunc dictum, molestie quam eleifend, feugiat lacus.</p>
         <p>Praesent sit amet condimentum est. Nullam nulla nisl, vehicula a quam mollis, blandit lobortis turpis. In lacinia pharetra accumsan. Nullam rutrum erat ac nisl cursus, ac imperdiet metus varius. Suspendisse porttitor fringilla dolor, sed venenatis ligula suscipit a. Aenean ligula enim, euismod ut ornare et, dictum nec mauris. Nullam cursus, augue id ultricies sagittis, libero libero sagittis quam, vel fermentum nisl justo vitae magna. Duis in felis sapien. Ut vel lacus fringilla, adipiscing ipsum ac, vestibulum nisi. Pellentesque commodo lacus eget erat commodo convallis. Aenean sagittis lorem quis leo blandit varius.</p>
         <p>Curabitur blandit quam pharetra, cursus sem ac, interdum leo. Duis faucibus quam eu iaculis scelerisque. Curabitur blandit ante sit amet elit ullamcorper, at dignissim justo fermentum. Ut quis turpis sed lorem ultrices viverra. Curabitur nunc nunc, adipiscing sed consequat nec, pretium non lorem. Integer semper enim ut semper mattis. Donec semper eget enim vitae hendrerit. Vivamus lobortis interdum placerat. Nullam laoreet viverra semper. Ut ac luctus lectus. Maecenas quis hendrerit erat. Aenean consectetur dolor a fringilla dignissim. Mauris vel tempor ligula.</p>
         <p>Etiam semper dapibus est eu condimentum. Vivamus pretium ante eros, sed venenatis nunc sollicitudin et. Morbi et dui adipiscing, congue sem sit amet, fermentum massa. Vivamus semper aliquam risus, eget pretium est lacinia ut. Etiam eu luctus nulla. Fusce mollis pellentesque sem, ac vestibulum turpis mollis eget. In et laoreet risus, ut sodales augue.</p>
       </article>
-      <footer>Created with <3 by the Rural Reader Team</footer>
+      <footer>Created with <3 by the <a href="mailto:RTNewsletter@orasi.com">Rural Reader Team</a></footer>
     </div>
   </div>
 </body>

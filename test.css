@@ -1,3 +1,36 @@
+.picture-placeholder {
+  border: black 1px solid;
+  width: 250px;
+  height: 300px;
+  text-align: center;
+  margin: 5px;
+  background-image: url("http://classyfrieds.com/wp-content/uploads/classyfrieds/admin/hond-puppy.jpg");
+  display: inline-block;
+}
+section.article-header {
+  text-align: center;
+}
+.author-section {
+  max-width: initial;
+  display: inline-block;
+}
+.avatar {
+  border: 1px solid black;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center center;
+  display: table-cell;
+}
+.avatar.me {
+  background-image: url("me.png");
+}
+.author-name {
+  display: table-cell;
+  vertical-align: middle;
+  padding-left: 10px;
+}
 #header-img {
   background-image: url("http://www.wired.com/images_blogs/underwire/2012/12/The-Hobbit_01.jpg");
   background-size: cover;
@@ -18,7 +51,7 @@
   margin-top: 10px;
   margin-left: 20px;
   float: left !important;
-  max-width: 150px;
+  max-width: 250px;
 }
 @media (max-width: 1156px) {
   .affix,
@@ -41,19 +74,8 @@ p {
   text-indent: 1.5em;
   word-wrap: break-word;
 }
-/*p::selection {
-   background: @highlight-color; //Safari
-}
-p::-moz-selection {
-	background: @highlight-color; //Firefox
-}*/
-article h1,
-article h4 {
-  text-align: center;
-}
-body {
-  margin: 0px;
-  font-family: "quatro-slab", "Helvetica Neue", "HelveticaNeue", Arial, sans-serif;
+article {
+  margin-bottom: 84px;
 }
 span#author-name {
   color: orange;
