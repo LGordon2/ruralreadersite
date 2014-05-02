@@ -1,3 +1,9 @@
+.article-picture {
+  width: 200px;
+  margin: 10px; }
+  .article-picture img {
+    width: inherit; }
+
 .picture-placeholder {
   border: black 1px solid;
   width: 250px;
@@ -5,15 +11,44 @@
   text-align: center;
   margin: 5px;
   background-image: url("http://classyfrieds.com/wp-content/uploads/classyfrieds/admin/hond-puppy.jpg");
-  display: inline-block;
-}
-section.article-header {
-  text-align: center;
-}
+  display: inline-block; }
+
+.grayscale {
+  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
+  /* Firefox 3.5+ */
+  filter: gray;
+  /* IE6-9 */
+  -webkit-filter: grayscale(100%);
+  /* Chrome 19+ & Safari 6+ */
+  -webkit-transition: all .6s ease;
+  /* Fade to color for Chrome and Safari */
+  -webkit-backface-visibility: hidden;
+  /* Fix for transition flickering */ }
+  .grayscale:hover {
+    filter: none;
+    -webkit-filter: grayscale(0%); }
+
+.image-gallery > div {
+  display: inline-block; }
+  .image-gallery > div span {
+    display: block; }
+
+img.grid-picture {
+  height: 150px;
+  border: 1px solid black;
+  padding: 5px;
+  margin: 5px; }
+
+.picture-placeholder.cat {
+  background-image: url("http://upload.wikimedia.org/wikipedia/commons/2/22/Turkish_Van_Cat.jpg"); }
+
+.nav > li > a {
+  padding: 10px; }
+
 .author-section {
   max-width: initial;
-  display: inline-block;
-}
+  display: inline-block; }
+
 .avatar {
   border: 1px solid black;
   width: 55px;
@@ -21,67 +56,82 @@ section.article-header {
   border-radius: 50%;
   background-size: cover;
   background-position: center center;
-  display: table-cell;
-}
+  display: table-cell; }
+
 .avatar.me {
-  background-image: url("me.png");
-}
-.author-name {
+  background-image: url("https://pbs.twimg.com/profile_images/3535679160/59ec96f521d8170391193beb9560d95f.jpeg"); }
+
+div.author-name {
   display: table-cell;
   vertical-align: middle;
-  padding-left: 10px;
-}
+  padding-left: 10px; }
+
 #header-img {
-  background-image: url("http://www.wired.com/images_blogs/underwire/2012/12/The-Hobbit_01.jpg");
+  background-image: url("http://www.impactonline.co/images/articles/posters/hobbit_panoramic.jpg");
   background-size: cover;
-  background-position: center center;
+  background-position: center top;
   max-width: 100%;
-  height: 480px;
-}
+  height: 480px; }
+
 .back-to-top {
-  margin-top: 50px;
-}
+  margin-top: 50px; }
+
 .affix {
   margin-top: 20px;
-  top: 0px;
-}
+  top: 0px; }
+
 .affix-top,
 .affix,
 .affix-bottom {
   margin-top: 10px;
   margin-left: 20px;
   float: left !important;
-  max-width: 250px;
-}
+  max-width: 200px; }
+
 @media (max-width: 1156px) {
   .affix,
   .affix-top,
   .affix-bottom {
-    display: none !important;
-  }
-}
-li.active {
+    display: none !important; } }
+.nav li.active {
+  -webkit-transition: border-left 0.2s ease-in;
   transition: border-left 0.2s ease-in;
   background-size: 10px 10px;
-  border-left: black 10px solid;
-}
+  border-left: black 10px solid; }
+
 #main-content {
-  max-width: 780px;
+  max-width: 720px;
   margin: 0 auto;
-  position: relative;
-}
+  position: relative; }
+
 p {
   text-indent: 1.5em;
-  word-wrap: break-word;
-}
+  word-wrap: break-word; }
+
 article {
   margin-bottom: 84px;
-}
+  text-align: center; }
+  article p {
+    text-align: justify; }
+
 span#author-name {
-  color: orange;
-}
+  color: orange; }
+
+span.author-name {
+  color: orange; }
+
 footer {
   text-align: center;
   font-size: 10px;
-  margin-top: 30px;
-}
+  margin-top: 30px; }
+
+.carousel {
+  background-color: lightgray; }
+
+.carousel-image {
+  margin: 0 auto; }
+
+iframe.embedded-youtube-vid {
+  width: 720px;
+  height: 405px;
+  margin: 20px auto; }
