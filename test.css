@@ -34,9 +34,12 @@
     display: block;
     text-align: center; }
 
-img.grid-picture {
+img.participant-picture, img.grid-picture {
   height: 80px;
   margin: 5px; }
+
+img.grid-picture {
+  height: 150px; }
 
 .picture-placeholder.cat {
   background-image: url("http://upload.wikimedia.org/wikipedia/commons/2/22/Turkish_Van_Cat.jpg"); }
@@ -49,12 +52,9 @@ img.grid-picture {
   display: inline-block; }
 
 .avatar {
-  border: 1px solid black;
   width: 55px;
   height: 55px;
   border-radius: 50%;
-  background-size: cover;
-  background-position: center center;
   display: table-cell;
   overflow: hidden; }
   .avatar img {
@@ -126,7 +126,7 @@ p {
   word-wrap: break-word; }
 
 article {
-  margin-bottom: 84px;
+  margin-bottom: 40px;
   text-align: center; }
   article p {
     text-align: justify; }
@@ -194,3 +194,13 @@ div.announcements-section {
     #bryan-ncaa-bracket iframe {
       width: 1020px;
       height: 800px; } }
+#volunteer-section {
+  text-align: center; }
+  #volunteer-section .volunteers .volunteer {
+    text-align: center;
+    display: inline-block; }
+    #volunteer-section .volunteers .volunteer span {
+      display: block; }
+    #volunteer-section .volunteers .volunteer div.avatar {
+      display: block;
+      margin: auto; }
