@@ -31,12 +31,11 @@
 .image-gallery > div {
   display: inline-block; }
   .image-gallery > div span {
-    display: block; }
+    display: block;
+    text-align: center; }
 
 img.grid-picture {
-  height: 150px;
-  border: 1px solid black;
-  padding: 5px;
+  height: 80px;
   margin: 5px; }
 
 .picture-placeholder.cat {
@@ -56,11 +55,11 @@ img.grid-picture {
   border-radius: 50%;
   background-size: cover;
   background-position: center center;
-  display: table-cell; }
+  display: table-cell;
+  overflow: hidden; }
   .avatar img {
     width: 55px;
-    height: 55px;
-    border-radius: 50%; }
+    height: 55px; }
 
 .avatar.me {
   background-image: url("https://pbs.twimg.com/profile_images/3535679160/59ec96f521d8170391193beb9560d95f.jpeg"); }
@@ -71,8 +70,22 @@ div.author-name {
   padding-left: 10px; }
 
 #header-img {
-  background-image: url("http://www.impactonline.co/images/articles/posters/hobbit_panoramic.jpg");
-  background-size: cover;
+  background: #7abcff;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #7abcff), color-stop(44%, #60abf8), color-stop(100%, #4096ee));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #7abcff 0%, #60abf8 44%, #4096ee 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7abcff', endColorstr='#4096ee',GradientType=0 );
+  /* IE6-9 */
   background-position: center top;
   max-width: 100%;
   height: 480px; }
@@ -90,8 +103,7 @@ div.author-name {
   margin-top: 10px;
   margin-left: 20px;
   float: left !important;
-  max-width: 200px;
-  display: none; }
+  max-width: 200px; }
 
 @media (max-width: 1156px) {
   .affix,
@@ -137,12 +149,12 @@ footer {
   margin: 0 auto; }
 
 iframe.embedded-youtube-vid {
-  width: 720px;
+  width: 100%;
   height: 405px;
   margin: 20px auto; }
 
 div.announcements-section {
-  width: 1375px;
+  width: 98%;
   margin: 0 auto; }
   div.announcements-section div.announcements-section-hdr {
     text-align: center; }

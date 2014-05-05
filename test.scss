@@ -31,21 +31,19 @@ $container-max-width: 720px;
 }
 .image-gallery
 {
-
   & > div
   {
     display: inline-block;
     span
     {
       display: block;
+      text-align: center;
     }
   }
 }
 img.grid-picture
 {
-  height: 150px;
-  border: 1px solid black;
-  padding: 5px;
+  height: 80px;
   margin: 5px;
 }
 .picture-placeholder.cat
@@ -68,12 +66,12 @@ img.grid-picture
   background-size: cover;
   background-position: center center;
   display: table-cell;
+  overflow: hidden;
 
   img
   {
     width: $avatar_size;
     height: $avatar_size;
-    border-radius: 50%;
   }
 }
 .avatar.me {
@@ -85,8 +83,16 @@ div.author-name {
   padding-left: 10px;
 }
 #header-img {
-  background-image: url("http://www.impactonline.co/images/articles/posters/hobbit_panoramic.jpg");
-  background-size: cover;
+background: #7abcff; /* Old browsers */
+background: -moz-linear-gradient(top,  #7abcff 0%, #60abf8 44%, #4096ee 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7abcff), color-stop(44%,#60abf8), color-stop(100%,#4096ee)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #7abcff 0%,#60abf8 44%,#4096ee 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #7abcff 0%,#60abf8 44%,#4096ee 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #7abcff 0%,#60abf8 44%,#4096ee 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #7abcff 0%,#60abf8 44%,#4096ee 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7abcff', endColorstr='#4096ee',GradientType=0 ); /* IE6-9 */
+
+
   background-position: center top;
   max-width: 100%;
   height: 480px;
@@ -105,7 +111,6 @@ div.author-name {
   margin-left: 20px;
   float: left !important;
   max-width: 200px;
-  display: none;
 }
 @media (max-width: 1156px) {
   .affix,
@@ -158,13 +163,13 @@ footer {
 }
 iframe.embedded-youtube-vid
 {
-  width: $container-max-width;
+  width: 100%;
   height: $container-max-width*.5625;
   margin: 20px auto;
 }
 div.announcements-section
 {
-  width: 1375px;
+  width: 98%;
   margin: 0 auto;
   div.announcements-section-hdr
   {
