@@ -60,13 +60,21 @@ img.grid-picture
   display: inline-block;
 }
 .avatar {
+  $avatar_size: 55px;
   border: 1px solid black;
-  width: 55px;
-  height: 55px;
+  width: $avatar_size;
+  height: $avatar_size;
   border-radius: 50%;
   background-size: cover;
   background-position: center center;
   display: table-cell;
+
+  img
+  {
+    width: $avatar_size;
+    height: $avatar_size;
+    border-radius: 50%;
+  }
 }
 .avatar.me {
   background-image: url("https://pbs.twimg.com/profile_images/3535679160/59ec96f521d8170391193beb9560d95f.jpeg");
@@ -97,6 +105,7 @@ div.author-name {
   margin-left: 20px;
   float: left !important;
   max-width: 200px;
+  display: none;
 }
 @media (max-width: 1156px) {
   .affix,
@@ -152,4 +161,68 @@ iframe.embedded-youtube-vid
   width: $container-max-width;
   height: $container-max-width*.5625;
   margin: 20px auto;
+}
+div.announcements-section
+{
+  width: 1375px;
+  margin: 0 auto;
+  div.announcements-section-hdr
+  {
+    text-align: center;
+  }
+  div.announcements-row
+  {
+    display: table;
+    width: 100%;
+    height: 300px;
+    margin-bottom: 10px;
+    div.announcement-cell
+    {
+       display: table-cell;
+       height: 100%;
+       padding-left: 10px;
+       &:first-child
+       {
+         padding-left: 0px;
+       }
+       div.announcement-content
+       {
+         width: 100%;
+         height: 100%;
+         border: 2px solid black;
+         border-radius: 4px;
+         overflow: hidden;
+         div.content-header
+         {
+           text-align: center;
+         }
+         img
+         {
+	   display: block;
+	   width: 50%;
+         }
+       }
+    }
+  }
+}
+#bryan-ncaa-bracket
+{
+  margin: 0 auto;
+  iframe
+  {
+    width: 100%;
+    height: 800px;
+  }
+}
+@media (min-width: 1020px){
+#bryan-ncaa-bracket
+{
+  left: -148px;
+  position: relative;
+  iframe
+  {
+    width: 1020px;
+    height: 800px;
+  }
+}
 }

@@ -57,6 +57,10 @@ img.grid-picture {
   background-size: cover;
   background-position: center center;
   display: table-cell; }
+  .avatar img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%; }
 
 .avatar.me {
   background-image: url("https://pbs.twimg.com/profile_images/3535679160/59ec96f521d8170391193beb9560d95f.jpeg"); }
@@ -86,7 +90,8 @@ div.author-name {
   margin-top: 10px;
   margin-left: 20px;
   float: left !important;
-  max-width: 200px; }
+  max-width: 200px;
+  display: none; }
 
 @media (max-width: 1156px) {
   .affix,
@@ -135,3 +140,45 @@ iframe.embedded-youtube-vid {
   width: 720px;
   height: 405px;
   margin: 20px auto; }
+
+div.announcements-section {
+  width: 1375px;
+  margin: 0 auto; }
+  div.announcements-section div.announcements-section-hdr {
+    text-align: center; }
+  div.announcements-section div.announcements-row {
+    display: table;
+    width: 100%;
+    height: 300px;
+    margin-bottom: 10px; }
+    div.announcements-section div.announcements-row div.announcement-cell {
+      display: table-cell;
+      height: 100%;
+      padding-left: 10px; }
+      div.announcements-section div.announcements-row div.announcement-cell:first-child {
+        padding-left: 0px; }
+      div.announcements-section div.announcements-row div.announcement-cell div.announcement-content {
+        width: 100%;
+        height: 100%;
+        border: 2px solid black;
+        border-radius: 4px;
+        overflow: hidden; }
+        div.announcements-section div.announcements-row div.announcement-cell div.announcement-content div.content-header {
+          text-align: center; }
+        div.announcements-section div.announcements-row div.announcement-cell div.announcement-content img {
+          display: block;
+          width: 50%; }
+
+#bryan-ncaa-bracket {
+  margin: 0 auto; }
+  #bryan-ncaa-bracket iframe {
+    width: 100%;
+    height: 800px; }
+
+@media (min-width: 1020px) {
+  #bryan-ncaa-bracket {
+    left: -148px;
+    position: relative; }
+    #bryan-ncaa-bracket iframe {
+      width: 1020px;
+      height: 800px; } }
