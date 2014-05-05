@@ -153,31 +153,35 @@ iframe.embedded-youtube-vid {
   height: 405px;
   margin: 20px auto; }
 
-div.announcements-section {
-  width: 98%;
+div#announcements-section {
+  width: 720px;
   margin: 0 auto; }
-  div.announcements-section div.announcements-section-hdr {
+  div#announcements-section div.announcements-section-hdr {
     text-align: center; }
-  div.announcements-section div.announcements-row {
+  div#announcements-section div.announcements-row {
     display: table;
     width: 100%;
     height: 300px;
     margin-bottom: 10px; }
-    div.announcements-section div.announcements-row div.announcement-cell {
+    div#announcements-section div.announcements-row div.announcement-cell {
       display: table-cell;
       height: 100%;
       padding-left: 10px; }
-      div.announcements-section div.announcements-row div.announcement-cell:first-child {
+      div#announcements-section div.announcements-row div.announcement-cell:first-child {
         padding-left: 0px; }
-      div.announcements-section div.announcements-row div.announcement-cell div.announcement-content {
+      div#announcements-section div.announcements-row div.announcement-cell div.announcement-content {
         width: 100%;
         height: 100%;
         border: 2px solid black;
         border-radius: 4px;
         overflow: hidden; }
-        div.announcements-section div.announcements-row div.announcement-cell div.announcement-content div.content-header {
+        div#announcements-section div.announcements-row div.announcement-cell div.announcement-content div.content-header {
           text-align: center; }
-        div.announcements-section div.announcements-row div.announcement-cell div.announcement-content img {
+        div#announcements-section div.announcements-row div.announcement-cell div.announcement-content div.content-body {
+          padding: 5px; }
+          div#announcements-section div.announcements-row div.announcement-cell div.announcement-content div.content-body ul {
+            padding-left: 15px; }
+        div#announcements-section div.announcements-row div.announcement-cell div.announcement-content img {
           display: block;
           width: 50%; }
 

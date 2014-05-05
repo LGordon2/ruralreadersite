@@ -169,9 +169,9 @@ iframe.embedded-youtube-vid
   height: $container-max-width*.5625;
   margin: 20px auto;
 }
-div.announcements-section
+div#announcements-section
 {
-  width: 98%;
+  width: $container-max-width;
   margin: 0 auto;
   div.announcements-section-hdr
   {
@@ -202,6 +202,14 @@ div.announcements-section
          div.content-header
          {
            text-align: center;
+         }
+         div.content-body
+         {
+           padding: 5px;
+           ul
+           {
+	     padding-left: 15px;
+	   }
          }
          img
          {
