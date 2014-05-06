@@ -1,0 +1,13 @@
+<% lineno_for_img = nil if lineno_for_img.nil? %>
+<% direction = "left" if direction.nil? %>
+<% f = (File.open("articles/#{article_name}", "rb")) %>
+<% f.each do |line| %>
+<% unless lineno_for_img.nil? %>
+  <% if f.lineno == lineno_for_img %>
+  <div class="pull-<%=direction%> article-picture">
+    <img src="pictures/<%= article_name %>/featured.jpg">
+  </div>
+  <% end %>
+<% end %>
+<p><%= line %></p>
+<% end %>
