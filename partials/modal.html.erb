@@ -1,0 +1,45 @@
+<div class="modal fade" id="<%= title.downcase.tr_s(" ","_") + "_modal" %>">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+
+        <h4 class="modal-title"><%= title %> photos</h4>
+      </div>
+
+      <div class="modal-body">
+        <div id="<%= title.downcase.tr_s(" ","_") + "_carousel" %>" class="carousel slide" data-ride="carousel" data-interval="false">
+          <!-- Indicators -->
+
+          <ol class="carousel-indicators">
+            <% all_pictures.length.times do |num| %>
+            <li data-target="#<%= title.downcase.tr_s(" ","_") + "_carousel" %>" data-slide-to="<%=num %>" class="<%= "active" if num == 0 %>"></li>
+            <% end %>
+          </ol><!-- Wrapper for slides -->
+
+          <div class="carousel-inner" style="text-align:center;">
+            <% all_pictures.each_with_index do |pic, index| %>
+            <div class="item <%= "active" if index==0 %>" style="text-align:center;">
+              <img class="carousel-image" src="<%= pic %>" />
+            </div>
+            <% end %>
+          </div>
+
+          <!-- Controls -->
+          <a class="left carousel-control" href="#<%= title.downcase.tr_s(" ","_") + "_carousel" %>" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+          </a>
+          <a class="right carousel-control" href="#<%= title.downcase.tr_s(" ","_") + "_carousel" %>" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+          </a>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">
+          Close
+        </button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

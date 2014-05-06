@@ -1,0 +1,9 @@
+<% pic_extension = "jpg" if pic_extension.nil? %>
+<div class="author-section">
+   <div class="avatar">
+     <img src="pictures/avatars/<%= "#{person}.#{pic_extension}" %>">
+   </div>
+   <div class="author-name">
+      <h4>by <span id="author-name"><%= person.split("_").collect{|name| name.capitalize}.join(" ") %></span></h4>
+   </div>
+</div>
