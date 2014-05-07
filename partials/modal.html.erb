@@ -20,7 +20,7 @@
           <div class="carousel-inner" style="text-align:center;">
             <% all_pictures.each_with_index do |pic, index| %>
             <div class="item <%= "active" if index==0 %>" style="text-align:center;">
-              <img class="carousel-image" src="<%= pic %>" />
+              <img class="carousel-image" src="pictures/avatars/blank.jpg" data-echo="<%= pic %>" />
             </div>
             <% end %>
           </div>

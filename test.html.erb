@@ -11,9 +11,10 @@
       <link rel="stylesheet" type="text/css" href="test.css" media="all">
       <!-- Latest compiled and minified JavaScript -->
       <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-      <script src="smooth-scroll.js"></script>
+      <script src="js/smooth-scroll.js"></script>
    </head>
    <body data-spy="scroll" data-target=".affix">
+
       <div id="header-img"></div>
       <div class="affix" data-spy="affix" data-offset-top="480" data-offset-bottom="200">
          <ul class="nav">
@@ -120,7 +121,7 @@
       <div id="volunteer-section" class="container">
          <h3>Thank you to the Newsletter Committee and all volunteers who helped us put together our Fourth Edition of "The Rural Reader":</h3>
          <div class="volunteers">
-            <% Dir["pictures/avatars/*.(jpg|png)"].each do |person_file| %>
+            <% Dir["pictures/avatars/*"].each do |person_file| %>
             <div class="volunteer">
                <div class="avatar">
                  <img src="<%= person_file %>">
@@ -131,5 +132,14 @@
          </div>
       </div>
       <footer>Created with <3 by the <a href="mailto:RTNewsletter@orasi.com">Rural Reader Team</a></footer>
+      <script src="js/echo.min.js"></script>
+      <script>
+      Echo.init({
+        offset: 100,
+        throttle: 250
+      });
+
+      // Echo.render(); is also available for non-scroll callbacks
+      </script>
    </body>
 </html>
