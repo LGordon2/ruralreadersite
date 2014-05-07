@@ -1,7 +1,7 @@
 <div class="image-gallery">
   <% Dir["pictures/#{name_for_gallery}/*.jpg"].first(3).each_with_index do |pic_name,index| %>
   <a href="#<%= name_for_gallery %>_carousel" data-slide-to="<%= index %>" data-toggle="modal" data-target="#<%= name_for_gallery %>_modal">
-    <img class="grayscale grid-picture" src="blank.jpg" data-echo="<%= pic_name %>">
+    <img class="grayscale grid-picture" src="pictures/blank.gif" data-echo="<%= pic_name %>">
   </a>
   <% end %>
 </div>

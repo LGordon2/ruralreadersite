@@ -222,3 +222,6 @@ img[src="blank.jpg"] {
   width: 1px;
   height: 1px;
   opacity: 0; }
+
+a[data-toggle='modal'] {
+  text-decoration: none; }
