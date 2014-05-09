@@ -79,7 +79,7 @@ div.author-name {
   padding-left: 10px; }
 
 #header-img {
-  background-image: url(file:///Users/lew/Developer/RuralReaderSite/pictures/header-binary.png);
+  background-image: url("../pictures/header-binary.png");
   background-size: 20%;
   max-width: 100%;
   height: 480px;
