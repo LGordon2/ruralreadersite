@@ -102,11 +102,16 @@
          </div>
          <div id="all-announcements">
            <div class="announcements-row">
+              <% ["Greensboro Birthdays","Atlanta Birthdays"].each do |title| %>
               <div class="announcement-cell">
+                 <div>
+                   <h4><%= title %></h4>
+                 </div>
                  <div class="announcement-content">
-                   <%= Tilt::ERBTemplate.new('partials/pictures.html.erb').render %>
+                   <%= Tilt::ERBTemplate.new('partials/anniversaries.html.erb').render %>
                  </div>
               </div>
+              <% end %>
            </div>
          </div>
       </div>

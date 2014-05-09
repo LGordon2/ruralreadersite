@@ -80,13 +80,13 @@ div.author-name {
 
 #header-img {
   background-image: url(file:///Users/lew/Developer/RuralReaderSite/pictures/header-binary.png);
-  background-size: 30%;
+  background-size: 20%;
   max-width: 100%;
   height: 480px;
   text-align: center; }
   #header-img img {
     max-height: 100%;
-    width: 100%;
+    max-width: 100%;
     padding: 50px; }
 
 .back-to-top {
@@ -163,7 +163,7 @@ div#announcements-section {
       display: table-row;
       margin-bottom: 10px; }
       div#announcements-section div#all-announcements div.announcements-row div.announcement-cell {
-        max-width: 300px;
+        text-align: center;
         display: table-cell;
         padding-left: 10px; }
         div#announcements-section div#all-announcements div.announcements-row div.announcement-cell:first-child {
