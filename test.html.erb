@@ -33,6 +33,13 @@
       </div>
       <div class="container">
          <div id="main-content">
+           <article id="lew-ty">
+              <section class="article-header">
+                 <h1>A Big "Thank You!"</h1>
+                 <%= Tilt::ERBTemplate.new("partials/author.html.erb").render(self, person: ["alissa_taylor", "john_martin"]) %>
+              </section>
+              <%= Tilt::ERBTemplate.new('partials/article_content.html.erb').render(self, article_name: "lew") %>
+           </article>
             <article id="employee-spotlight">
                <section class="article-header">
                   <h1>Employee Spotlight: <span class="author-name">Rodney Rodis</span></h1>

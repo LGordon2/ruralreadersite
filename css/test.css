@@ -66,6 +66,12 @@ img.grid-picture {
   border-radius: 50%;
   display: table-cell;
   overflow: hidden; }
+  .avatar .multi-avatar {
+    height: 100%;
+    width: 50%;
+    float: left; }
+    .avatar .multi-avatar:last-child {
+      background-position-x: 27.5px; }
   .avatar img {
     width: 55px;
     height: 55px; }
@@ -130,11 +136,8 @@ article {
   article p {
     text-align: justify; }
 
-span#author-name {
-  color: orange; }
-
-span.author-name {
-  color: orange; }
+span#author-name, span.author-name {
+  color: #357bb9; }
 
 footer {
   text-align: center;

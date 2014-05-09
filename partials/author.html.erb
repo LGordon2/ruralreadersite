@@ -1,9 +1,24 @@
 <% pic_extension = "jpg" if pic_extension.nil? %>
+<% person = [person] unless person.kind_of?(Array) %>
 <div class="author-section">
    <div class="avatar">
-     <img src="pictures/avatars/<%= "#{person}.#{pic_extension}" %>">
+     <% if person.length > 1 %>
+     <% person.each_with_index do |p,index| %>
+     <div class="multi-avatar" style="background-image: url(pictures/avatars/<%= "#{p}.#{pic_extension}"%>);">
+     </div>
+     <% end %>
+     <% else %>
+       <img src="pictures/avatars/<%= "#{person.first}.#{pic_extension}" %>">
+     <% end %>
    </div>
    <div class="author-name">
-      <h4>by <span id="author-name"><%= person.split("_").collect{|name| name.capitalize}.join(" ") %></span></h4>
+      <h4>by
+        <% person.each_with_index do |p,index| %>
+        <span id="author-name">
+          <%= p.split("_").collect{|name| name.capitalize}.join(" ") %>
+        </span>
+        <%= "and" unless index == person.length - 1 %>
+        <% end %>
+      </h4>
    </div>
 </div>

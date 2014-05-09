@@ -1,4 +1,5 @@
 $container-max-width: 720px;
+$orasi_blue: #357bb9;
 img
 {
   width: initial;
@@ -79,7 +80,14 @@ img.grid-picture
   border-radius: 50%;
   display: table-cell;
   overflow: hidden;
-
+  .multi-avatar{
+    height:100%;
+    width:50%;
+    float:left;
+    &:last-child{
+      background-position-x: 27.5px;
+    }
+  }
   img
   {
     width: $avatar_size;
@@ -151,11 +159,8 @@ article {
     text-align: justify;
   }
 }
-span#author-name {
-  color: orange;
-}
-span.author-name {
-  color: orange;
+span#author-name,span.author-name {
+  color: $orasi_blue;
 }
 footer {
   text-align: center;
