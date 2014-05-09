@@ -286,6 +286,9 @@ img[src="pictures/blank.gif"]
 a[data-toggle='modal']
 {
   text-decoration: none;
+  &:hover,&:focus{
+    text-decoration: none;
+  }
 }
 .tint {
     position: relative;

@@ -218,6 +218,8 @@ img[src="pictures/blank.gif"] {
 
 a[data-toggle='modal'] {
   text-decoration: none; }
+  a[data-toggle='modal']:hover, a[data-toggle='modal']:focus {
+    text-decoration: none; }
 
 .tint {
   position: relative;
