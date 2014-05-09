@@ -23,7 +23,7 @@ img
   background-image: url("http://classyfrieds.com/wp-content/uploads/classyfrieds/admin/hond-puppy.jpg");
   display: inline-block;
 }
-img.grid-picture,img.participant-picture
+img.grid-picture,img.participant-picture,figure.close-picture > img
 {
   -moz-transition: opacity 1s ease;
   -webkit-transition: opacity 1s ease;
@@ -183,7 +183,7 @@ iframe.embedded-youtube-vid
 }
 div#announcements-section
 {
-  width: $container-max-width;
+  width: 740px;
   margin: 0 auto;
   div.announcements-section-hdr
   {
@@ -222,10 +222,11 @@ div#announcements-section
   	     padding-left: 15px;
   	   }
            }
-           img.close-picture
+           figure.close-picture > img
            {
         	   display: inline;
              width: 55px;
+             height: 55px;
              float: left;
 
            }

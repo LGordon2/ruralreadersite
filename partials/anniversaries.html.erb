@@ -1,6 +1,15 @@
-<% 20.times do %>
-<figure class="tint close-picture" data-toggle="tooltip" data-placement="top" title="Lewis Gordon
-October 13">
-<img src="pictures/avatars/lew_gordon.png">
+<% Dir["#{picture_directory}/*.jpg","#{picture_directory}/*.png"].sort.each do |picture_file| %>
+<% json_data = JSON.parse(File.open("#{picture_directory}/data.json").read) %>
+<% person_name = picture_file.split("/").last.split(".")[0] %>
+<% unless json_data[person_name].nil? %>
+<% if date_is_annual %>
+<% anniversary_date = "#{Date.parse(json_data[person_name]).strftime("%B")} #{ordinalize(Date.parse(json_data[person_name]).strftime("%e"))}"%>
+<% else %>
+<% anniversary_date = Date.parse(json_data[person_name]).strftime("%B %e, %Y") %>
+<% end %>
+<% end %>
+<figure class="tint close-picture" data-toggle="tooltip" data-placement="top" title="<%= capitalize_name(person_name.split("_").join(" ")) %>
+<%=anniversary_date unless anniversary_date.nil? %>">
+<img src="pictures/blank.gif" data-echo="<%= picture_file %>">
 </figure>
 <% end %>

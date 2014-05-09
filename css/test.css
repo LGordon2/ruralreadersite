@@ -17,7 +17,7 @@ img {
   background-image: url("http://classyfrieds.com/wp-content/uploads/classyfrieds/admin/hond-puppy.jpg");
   display: inline-block; }
 
-img.grid-picture, img.participant-picture, img.grid-picture {
+img.grid-picture, img.participant-picture, img.grid-picture, figure.close-picture > img {
   -moz-transition: opacity 1s ease;
   -webkit-transition: opacity 1s ease;
   transition: opacity 1s ease; }
@@ -156,7 +156,7 @@ iframe.embedded-youtube-vid {
   margin: 20px auto; }
 
 div#announcements-section {
-  width: 720px;
+  width: 740px;
   margin: 0 auto; }
   div#announcements-section div.announcements-section-hdr {
     text-align: center; }
@@ -182,9 +182,10 @@ div#announcements-section {
             padding: 5px; }
             div#announcements-section div#all-announcements div.announcements-row div.announcement-cell div.announcement-content div.content-body ul {
               padding-left: 15px; }
-          div#announcements-section div#all-announcements div.announcements-row div.announcement-cell div.announcement-content img.close-picture {
+          div#announcements-section div#all-announcements div.announcements-row div.announcement-cell div.announcement-content figure.close-picture > img {
             display: inline;
             width: 55px;
+            height: 55px;
             float: left; }
 
 #bryan-ncaa-bracket {

@@ -71,14 +71,15 @@
                   <h1>The Caveman Lifestyle</h1>
                   <%= Tilt::ERBTemplate.new("partials/author.html.erb").render(self, person: "tim_ruckriegel") %>
                </section>
-               <%= Tilt::ERBTemplate.new('partials/article_content.html.erb').render(self, article_name: "caveman_lifestyle") %>
+               <%= Tilt::ERBTemplate.new('partials/article_content.html.erb').render(self, article_name: "caveman_lifestyle", lineno_for_img: 2, direction: "right") %>
+               <%= Tilt::ERBTemplate.new('partials/image_gallery.html.erb').render(self, name_for_gallery: "caveman_lifestyle") %>
             </article>
             <article id="potluck">
                <section class="article-header">
                   <h1>St. Patty's Day Potluck</h1>
                   <%= Tilt::ERBTemplate.new("partials/author.html.erb").render(self, person: "alissa_taylor") %>
                </section>
-               <%= Tilt::ERBTemplate.new('partials/article_content.html.erb').render(self, article_name: "potluck", lineno_for_img: 2, direction: "right") %>
+               <%= Tilt::ERBTemplate.new('partials/article_content.html.erb').render(self, article_name: "potluck", lineno_for_img: 2) %>
                <%= Tilt::ERBTemplate.new('partials/image_gallery.html.erb').render(self, name_for_gallery: "potluck") %>
             </article>
             <article id="code-challenge">
@@ -86,7 +87,7 @@
                   <h1>Rural Testing Code Challenge Tournament</h1>
                   <%= Tilt::ERBTemplate.new("partials/author.html.erb").render(self, person: "lew_gordon", pic_extension: :png) %>
                </section>
-               <%= Tilt::ERBTemplate.new('partials/article_content.html.erb').render(self, article_name: "code_challenge", lineno_for_img: 2) %>
+               <%= Tilt::ERBTemplate.new('partials/article_content.html.erb').render(self, article_name: "code_challenge", lineno_for_img: 2, direction: "right") %>
                <%= Tilt::ERBTemplate.new('partials/image_gallery.html.erb').render(self, name_for_gallery: "code_challenge") %>
                <section class="article-header">
                   <h1>Challenge Participants</h1>
@@ -109,16 +110,14 @@
          </div>
          <div id="all-announcements">
            <div class="announcements-row">
-              <% ["Greensboro Birthdays","Atlanta Birthdays"].each do |title| %>
               <div class="announcement-cell">
                  <div>
-                   <h4><%= title %></h4>
+                   <h4>Rural Birthdays</h4>
                  </div>
                  <div class="announcement-content">
-                   <%= Tilt::ERBTemplate.new('partials/anniversaries.html.erb').render %>
+                   <%= Tilt::ERBTemplate.new('partials/anniversaries.html.erb').render(self, picture_directory: 'pictures/announcements/rural-birthdays', date_is_annual: true) %>
                  </div>
               </div>
-              <% end %>
            </div>
          </div>
       </div>
