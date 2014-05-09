@@ -29,7 +29,7 @@ img.grid-picture, img.participant-picture, img.grid-picture {
   /* IE6-9 */
   -webkit-filter: grayscale(100%);
   /* Chrome 19+ & Safari 6+ */
-  -webkit-transition: opacity 3s ease;
+  -webkit-transition: opacity .6s ease;
   /* Fade to color for Chrome and Safari */
   -webkit-backface-visibility: hidden;
   /* Fix for transition flickering */ }
@@ -79,25 +79,15 @@ div.author-name {
   padding-left: 10px; }
 
 #header-img {
-  background: #7abcff;
-  /* Old browsers */
-  background: -moz-linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 100%);
-  /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #7abcff), color-stop(44%, #60abf8), color-stop(100%, #4096ee));
-  /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 100%);
-  /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 100%);
-  /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 100%);
-  /* IE10+ */
-  background: linear-gradient(to bottom, #7abcff 0%, #60abf8 44%, #4096ee 100%);
-  /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7abcff', endColorstr='#4096ee',GradientType=0 );
-  /* IE6-9 */
-  background-position: center top;
+  background-image: url(file:///Users/lew/Developer/RuralReaderSite/pictures/header-binary.png);
+  background-size: 30%;
   max-width: 100%;
-  height: 480px; }
+  height: 480px;
+  text-align: center; }
+  #header-img img {
+    max-height: 100%;
+    width: 100%;
+    padding: 50px; }
 
 .back-to-top {
   margin-top: 50px; }
@@ -123,7 +113,7 @@ div.author-name {
   -webkit-transition: border-left 0.2s ease-in;
   transition: border-left 0.2s ease-in;
   background-size: 10px 10px;
-  border-left: black 10px solid; }
+  border-left: 10px solid lightblue; }
 
 #main-content {
   max-width: 720px;
@@ -167,32 +157,32 @@ div#announcements-section {
   margin: 0 auto; }
   div#announcements-section div.announcements-section-hdr {
     text-align: center; }
-  div#announcements-section div.announcements-row {
-    display: table;
-    width: 100%;
-    height: 300px;
-    margin-bottom: 10px; }
-    div#announcements-section div.announcements-row div.announcement-cell {
-      display: table-cell;
-      height: 100%;
-      padding-left: 10px; }
-      div#announcements-section div.announcements-row div.announcement-cell:first-child {
-        padding-left: 0px; }
-      div#announcements-section div.announcements-row div.announcement-cell div.announcement-content {
-        width: 100%;
-        height: 100%;
-        border: 2px solid black;
-        border-radius: 4px;
-        overflow: hidden; }
-        div#announcements-section div.announcements-row div.announcement-cell div.announcement-content div.content-header {
-          text-align: center; }
-        div#announcements-section div.announcements-row div.announcement-cell div.announcement-content div.content-body {
-          padding: 5px; }
-          div#announcements-section div.announcements-row div.announcement-cell div.announcement-content div.content-body ul {
-            padding-left: 15px; }
-        div#announcements-section div.announcements-row div.announcement-cell div.announcement-content img {
-          display: block;
-          width: 50%; }
+  div#announcements-section div#all-announcements {
+    display: table; }
+    div#announcements-section div#all-announcements div.announcements-row {
+      display: table-row;
+      margin-bottom: 10px; }
+      div#announcements-section div#all-announcements div.announcements-row div.announcement-cell {
+        max-width: 300px;
+        display: table-cell;
+        padding-left: 10px; }
+        div#announcements-section div#all-announcements div.announcements-row div.announcement-cell:first-child {
+          padding-left: 0px; }
+        div#announcements-section div#all-announcements div.announcements-row div.announcement-cell div.announcement-content {
+          border: 2px solid black;
+          border-radius: 4px;
+          padding: 10px;
+          overflow: hidden; }
+          div#announcements-section div#all-announcements div.announcements-row div.announcement-cell div.announcement-content div.content-header {
+            text-align: center; }
+          div#announcements-section div#all-announcements div.announcements-row div.announcement-cell div.announcement-content div.content-body {
+            padding: 5px; }
+            div#announcements-section div#all-announcements div.announcements-row div.announcement-cell div.announcement-content div.content-body ul {
+              padding-left: 15px; }
+          div#announcements-section div#all-announcements div.announcements-row div.announcement-cell div.announcement-content img.close-picture {
+            display: inline;
+            width: 55px;
+            float: left; }
 
 #bryan-ncaa-bracket {
   margin: 0 auto; }
@@ -225,3 +215,28 @@ img[src="pictures/blank.gif"] {
 
 a[data-toggle='modal'] {
   text-decoration: none; }
+
+.tint {
+  position: relative;
+  float: left;
+  cursor: pointer; }
+
+.tooltip {
+  white-space: pre; }
+
+.tint:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: none; }
+
+.tint:hover:before {
+  background: rgba(0, 0, 0, 0.5);
+  -moz-transition: background 0.3s linear;
+  -webkit-transition: background 0.3s linear;
+  -o-transition: background 0.3s linear;
+  transition: background 0.3s linear; }
