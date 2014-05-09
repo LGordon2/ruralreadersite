@@ -156,7 +156,7 @@ iframe.embedded-youtube-vid {
   margin: 20px auto; }
 
 div#announcements-section {
-  width: 740px;
+  max-width: 740px;
   margin: 0 auto; }
   div#announcements-section div.announcements-section-hdr {
     text-align: center; }
