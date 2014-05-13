@@ -77,9 +77,9 @@
             <article id="potluck">
                <section class="article-header">
                   <h1>St. Patty's Day Potluck</h1>
-                  <%= Tilt::ERBTemplate.new("partials/author.html.erb").render(self, person: "alissa_taylor") %>
+                  <%= Tilt::ERBTemplate.new("partials/author.html.erb").render(self, person: "john_martin") %>
                </section>
-               <%= Tilt::ERBTemplate.new('partials/article_content.html.erb').render(self, article_name: "potluck", lineno_for_img: 2) %>
+               <%= Tilt::ERBTemplate.new('partials/article_content.html.erb').render(self, article_name: "potluck", lineno_for_img: 1) %>
                <%= Tilt::ERBTemplate.new('partials/image_gallery.html.erb').render(self, name_for_gallery: "potluck") %>
             </article>
             <article id="code-challenge">
@@ -109,6 +109,129 @@
             <h1>Announcements</h1>
          </div>
          <div id="all-announcements">
+           <h3>Greensboro Local Events</h3>
+           <div class="announcements-row">
+              <div class="announcement-cell">
+                 <div class="announcement-content">
+                   <span>Greensboro Grasshoppers season has started: <a href="http://www.milb.com/documents/9/8/4/61594984/2014_Schedule_Final_z8l4anpp.pdf">http://www.milb.com/documents/9/8/4/61594984/2014_Schedule_Final_z8l4anpp.pdf</a></span>
+                 </div>
+              </div>
+              <div class="announcement-cell">
+                 <div class="announcement-content">
+                   <span>Every Friday at 8:00 p.m. The Idiot Box presents "No Nonsense" Comedy. No-Nonsense is a stand-up comedy showcase featuring the best comedians in North Carolina.  Buy tickets: <a href="https://ibcomedy.yapsody.com/">https://ibcomedy.yapsody.com/</a></span>
+                 </div>
+              </div>
+            </div>
+            <div class="announcements-row">
+              <div class="announcement-cell">
+                 <div class="announcement-content">
+                   <span>BROTHER WOLF at the triad stage May 6 - 25, 2014 <a href="http://triadstage.org/series/158/brother-wolf">http://triadstage.org/series/158/brother-wolf</a></span>
+                 </div>
+              </div>
+              <div class="announcement-cell">
+                 <div class="announcement-content">
+                   <span>Chuckapalooza 2014: An Outdoor Summer Music Festival  June 21 and June 22 <a href="http://events.triangle.com/greensboro_nc/events/show/369650205-chuckapalooza-2014-an-outdoor-summer-music-festival">http://events.triangle.com/greensboro_nc/events/show/369650205-chuckapalooza-2014-an-outdoor-summer-music-festival</a></span>
+                 </div>
+              </div>
+           </div>
+           <h3>Atlanta Local Events</h3>
+           <div class="announcements-row">
+              <div class="announcement-cell">
+                 <div class="announcement-content">
+                   <span>Florida Georgia Line, Eric Clapton, Lady Gaga, Katy Perry, Morrissey, Luke Bryan, etc. in concert – <a href="http://concertful.com/concerts/united-states/ga/atlanta">http://concertful.com/concerts/united-states/ga/atlanta</a></span>
+                 </div>
+              </div>
+              <div class="announcement-cell">
+                 <div class="announcement-content">
+                   <span>37th annual Atlanta Jazz Fest – May 23-25 - Piedmont Park (3 stages – main, international and local) <a href="https://www.facebook.com/atlantajazzfestival">https://www.facebook.com/atlantajazzfestival</a></span>
+                 </div>
+              </div>
+              <div class="announcement-cell">
+                 <div class="announcement-content">
+                   <span>Atlanta Food & Wine Festival – May 29-June 1 – Midtown <a href="http://atlfoodandwinefestival.com/">http://atlfoodandwinefestival.com/</a></span>
+                 </div>
+              </div>
+              <div class="announcement-cell">
+                 <div class="announcement-content">
+                   <span>Braves Baseball <a href="http://atlanta.braves.mlb.com">http://atlanta.braves.mlb.com</a></span>
+                 </div>
+              </div>
+              <div class="announcement-cell">
+                 <div class="announcement-content">
+                   <span>Atlanta Cycling Festival – June 7-14 <a href="http://www.atlantacyclingfestival.com/">http://www.atlantacyclingfestival.com/</a></span>
+                 </div>
+              </div>
+              <div class="announcement-cell">
+                 <div class="announcement-content">
+                   <span>Peachtree Road Race – July 4 <a href="http://www.peachtreeroadrace.org/">http://www.peachtreeroadrace.org/</a></span>
+                 </div>
+              </div>
+              <div class="announcement-cell">
+                 <div class="announcement-content">
+                   <span>Fantastic Fourth Celebration – Stone Mountain Park – July 3-5 <a href="http://www.stonemountainpark.com/">http://www.stonemountainpark.com/</a></span>
+                 </div>
+              </div>
+           </div>
+           <div class="announcements-row">
+             <div class="announcement-cell">
+                <div>
+                  <h4>Lemon Raspberry Cupcakes</h4>
+                  <%= Tilt::ERBTemplate.new("partials/author.html.erb").render(self, person: "julia_walser") %>
+                </div>
+                <div class="announcement-content" id="recipe">
+                  <div id="recipe-picture">
+                    <img src="pictures/announcements/recipe/lemon_raspberry_cupcakes.jpg">
+                  </div>
+                  <div>
+                    <span>A light, refreshing cupcake that is bursting with flavor. Recipe from <a href="http://hoosierhomemade.com/">HoosierHomemade.com</a></span>
+                  </div>
+                  <div>
+                    <h4>Ingredients</h4>
+                    <ul>
+                      <li>1 Lemon Cake Mix {I used Pillsbury}</li>
+                      <li>1 small box instant Lemon Pudding</li>
+                      <li>Zest and juice of 1 lemon</li>
+                      <li>3 eggs</li>
+                      <li>1 cup water</li>
+                      <li>1/3 cup oil</li>
+                      <li>Raspberry Filling – I used Smucker’s Simply Fruit Seedless Red Raspberry</li>
+                      <li>Frosting – your favorite, I used COOL WHIP Vanilla Frosting</li>
+                      <li>Fresh Raspberries for garnish if desired</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4>Instructions</h4>
+                    <ol>
+                        <li>Preheat oven to 350 degrees and add cupcake liners to pan</li>
+                        <li>In a large bowl combine all ingredients for the cake, combine well</li>
+                        <li>Divide batter into cupcake liners, about 2/3 full</li>
+                        <li>Bake at 350 degrees</li>
+                        <li>Mini cupcakes – 8-10 minutes</li>
+                        <li>Regular cupcakes – 12-15 minutes</li>
+                        <li>Or until a toothpick inserted in the center comes out clean</li>
+                        <li>Cool completely</li>
+                        <h5>Filling</h5>
+                        <li>Fit a decorator bag with a Bismarck Tip and fill with raspberry</li>
+                        <li>Pipe raspberry into each cupcake</li>
+                        <h5>Frosting</h5>
+                        <li>Fit a decorator bag with a large round tip – I used #1M</li>
+                        <li>Fill with frosting and pipe on</li>
+                        <li>Top with a fresh raspberry</li>
+                    </ol>
+                  </div>
+                </div>
+             </div>
+           </div>
+           <div class="announcements-row">
+              <div class="announcement-cell">
+                 <div>
+                   <h4>Rural Anniversaries</h4>
+                 </div>
+                 <div class="announcement-content">
+                   <%= Tilt::ERBTemplate.new('partials/anniversaries.html.erb').render(self, picture_directory: 'pictures/announcements/rural-anniversaries', date_is_annual: false) %>
+                 </div>
+              </div>
+           </div>
            <div class="announcements-row">
               <div class="announcement-cell">
                  <div>

@@ -190,24 +190,32 @@ div#announcements-section
     text-align: center;
   }
   div#all-announcements{
-    display:table;
+    text-align: center;
     div.announcements-row
     {
-      display: table-row;
       margin-bottom: 10px;
       div.announcement-cell
       {
          text-align:center;
-         display: table-cell;
+         display: inline-block;
          padding-left: 10px;
+         overflow-wrap: break-word;
          &:first-child
          {
            padding-left: 0px;
          }
+         #recipe
+         {
+           text-align:justify;
+
+           #recipe-picture
+           {
+             padding: 20px;
+           }
+         }
          div.announcement-content
          {
-           border: 2px solid black;
-           border-radius: 4px;
+           box-shadow: 1px 1px 5px #888888;
            padding: 10px;
            overflow: hidden;
            div.content-header
@@ -224,9 +232,10 @@ div#announcements-section
            }
            figure.close-picture > img
            {
+             $close_picture_size: 90px;
         	   display: inline;
-             width: 55px;
-             height: 55px;
+             width: $close_picture_size;
+             height: $close_picture_size;
              float: left;
 
            }

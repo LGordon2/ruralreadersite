@@ -161,19 +161,22 @@ div#announcements-section {
   div#announcements-section div.announcements-section-hdr {
     text-align: center; }
   div#announcements-section div#all-announcements {
-    display: table; }
+    text-align: center; }
     div#announcements-section div#all-announcements div.announcements-row {
-      display: table-row;
       margin-bottom: 10px; }
       div#announcements-section div#all-announcements div.announcements-row div.announcement-cell {
         text-align: center;
-        display: table-cell;
-        padding-left: 10px; }
+        display: inline-block;
+        padding-left: 10px;
+        overflow-wrap: break-word; }
         div#announcements-section div#all-announcements div.announcements-row div.announcement-cell:first-child {
           padding-left: 0px; }
+        div#announcements-section div#all-announcements div.announcements-row div.announcement-cell #recipe {
+          text-align: justify; }
+          div#announcements-section div#all-announcements div.announcements-row div.announcement-cell #recipe #recipe-picture {
+            padding: 20px; }
         div#announcements-section div#all-announcements div.announcements-row div.announcement-cell div.announcement-content {
-          border: 2px solid black;
-          border-radius: 4px;
+          box-shadow: 1px 1px 5px #888888;
           padding: 10px;
           overflow: hidden; }
           div#announcements-section div#all-announcements div.announcements-row div.announcement-cell div.announcement-content div.content-header {
@@ -184,8 +187,8 @@ div#announcements-section {
               padding-left: 15px; }
           div#announcements-section div#all-announcements div.announcements-row div.announcement-cell div.announcement-content figure.close-picture > img {
             display: inline;
-            width: 55px;
-            height: 55px;
+            width: 90px;
+            height: 90px;
             float: left; }
 
 #bryan-ncaa-bracket {
