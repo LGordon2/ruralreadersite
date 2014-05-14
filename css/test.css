@@ -176,6 +176,8 @@ div#announcements-section {
           text-align: justify; }
           div#announcements-section div#all-announcements div.announcements-row div.announcement-cell #recipe #recipe-picture {
             padding: 20px; }
+          div#announcements-section div#all-announcements div.announcements-row div.announcement-cell #recipe #recipe-description, div#announcements-section div#all-announcements div.announcements-row div.announcement-cell #recipe #recipe-picture {
+            text-align: center; }
         div#announcements-section div#all-announcements div.announcements-row div.announcement-cell div.announcement-content {
           box-shadow: 1px 1px 5px #888888;
           padding: 10px;
