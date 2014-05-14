@@ -1,0 +1,4 @@
+#!/bin/sh
+
+find . -name "*.jpg" | xargs jpegoptim --strip-all
+find . -name "*.png" | xargs optipng -o7

@@ -40,6 +40,12 @@
               </section>
               <%= Tilt::ERBTemplate.new('partials/article_content.html.erb').render(self, article_name: "lew") %>
            </article>
+            <article id="new-employee-spotlight">
+               <section class="article-header">
+                  <h1>New Employee Spotlight</h1>
+               </section>
+               <%= Tilt::ERBTemplate.new('partials/new_employees.html.erb').render %>
+            </article>
             <article id="employee-spotlight">
                <section class="article-header">
                   <h1>Employee Spotlight: <span class="author-name">Rodney Rodis</span></h1>

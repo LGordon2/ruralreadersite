@@ -370,3 +370,20 @@ div.card{
 {
   text-align:left;
 }
+.card.new-employee-card{
+  width: 45%;
+  height: 400px;
+  display: inline-block;
+
+  div.header-img{
+    video{
+      width: 100%;
+    }
+  }
+  .facts{
+    padding: 10px 20px;
+    span{
+      display: block;
+    }
+  }
+}

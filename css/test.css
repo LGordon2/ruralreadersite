@@ -281,3 +281,14 @@ div.card {
 
 #guess-who-facts {
   text-align: left; }
+
+.card.new-employee-card {
+  width: 45%;
+  height: 400px;
+  display: inline-block; }
+  .card.new-employee-card div.header-img video {
+    width: 100%; }
+  .card.new-employee-card .facts {
+    padding: 10px 20px; }
+    .card.new-employee-card .facts span {
+      display: block; }
