@@ -282,13 +282,13 @@ div.card {
 #guess-who-facts {
   text-align: left; }
 
-.card.new-employee-card {
-  width: 45%;
-  height: 400px;
-  display: inline-block; }
-  .card.new-employee-card div.header-img video {
+.new-employee-card-row .card.new-employee-card {
+  width: 44%;
+  display: inline-block;
+  vertical-align: top; }
+  .new-employee-card-row .card.new-employee-card div.header-img video {
     width: 100%; }
-  .card.new-employee-card .facts {
+  .new-employee-card-row .card.new-employee-card .facts {
     padding: 10px 20px; }
-    .card.new-employee-card .facts span {
+    .new-employee-card-row .card.new-employee-card .facts span {
       display: block; }
