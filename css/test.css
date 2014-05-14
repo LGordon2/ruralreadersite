@@ -168,6 +168,7 @@ div#announcements-section {
         text-align: center;
         display: inline-block;
         padding-left: 10px;
+        width: 100%;
         overflow-wrap: break-word; }
         div#announcements-section div#all-announcements div.announcements-row div.announcement-cell:first-child {
           padding-left: 0px; }
@@ -267,7 +268,7 @@ div.card {
     text-align: center; }
     div.card div.header-image img {
       width: 100%;
-      margin: -150px 0 0 35px; }
+      margin: -150px 0 0 0; }
     div.card div.header-image span.title {
       color: blue;
       font-weight: bold;
