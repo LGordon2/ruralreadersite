@@ -198,13 +198,6 @@ div#announcements-section {
     width: 100%;
     height: 800px; }
 
-@media (min-width: 1020px) {
-  #bryan-ncaa-bracket {
-    left: -148px;
-    position: relative; }
-    #bryan-ncaa-bracket iframe {
-      width: 1020px;
-      height: 800px; } }
 #volunteer-section {
   text-align: center; }
   #volunteer-section .volunteers .volunteer {
@@ -285,3 +278,6 @@ div.card {
     transition: max-height 0.3s, padding 0.45s; }
     div.card div.details span {
       display: block; }
+
+#guess-who-facts {
+  text-align: left; }

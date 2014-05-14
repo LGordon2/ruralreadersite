@@ -111,7 +111,7 @@ window.Echo = (function (global, document, undefined) {
 })(this, document);
 $(function() {
   $('.modal').on('shown.bs.modal', function (e) {
-    $(this).find(".carousel-image").each(function(){
+    $(this).find("[data-echo-wait]").each(function(){
       this.removeAttribute('data-echo-wait');
       Echo.render();
     });

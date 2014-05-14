@@ -79,7 +79,7 @@
                   <h1>St. Patty's Day Potluck</h1>
                   <%= Tilt::ERBTemplate.new("partials/author.html.erb").render(self, person: "john_martin") %>
                </section>
-               <%= Tilt::ERBTemplate.new('partials/article_content.html.erb').render(self, article_name: "potluck", lineno_for_img: 1) %>
+               <%= Tilt::ERBTemplate.new('partials/article_content.html.erb').render(self, article_name: "potluck") %>
                <%= Tilt::ERBTemplate.new('partials/image_gallery.html.erb').render(self, name_for_gallery: "potluck") %>
             </article>
             <article id="code-challenge">
@@ -107,9 +107,10 @@
       <div id="announcements-section">
          <div class="announcements-section-hdr">
             <h1>Announcements</h1>
-            <%= Tilt::ERBTemplate.new('partials/local_events.html.erb').render %>
          </div>
          <div id="all-announcements">
+           <%= Tilt::ERBTemplate.new('partials/guess_who.html.erb').render %>
+           <%= Tilt::ERBTemplate.new('partials/local_events.html.erb').render %>
            <div class="announcements-row">
              <div class="announcement-cell">
                 <div>
