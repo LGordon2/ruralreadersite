@@ -5,4 +5,4 @@ find . -name "*.png" | xargs optipng -o7
 rm css/reader.min.css js/reader.min.js
 java -jar yuicompressor-2.4.8.jar -o '.css$:.min.css' css/reader.css
 java -jar yuicompressor-2.4.8.jar -o '.js$:.min.js' js/reader.js
-find . -name "*.css" -o -name "*.png" -o -name "*.jpg" -o -name ".js" | xargs gzip -9
+find . -name "*.css" -o -name "*.png" -o -name "*.jpg" -o -name ".js" | xargs gzip -9 -f
