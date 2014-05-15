@@ -77,7 +77,7 @@
             <article id="mm-charity-initiative">
                <section class="article-header">
                   <h1>March Madness Charity Initiative</h1>
-                  <%= Tilt::ERBTemplate.new("partials/author.html.erb").render(self, person: "hope_isley") %>
+                  <%= Tilt::ERBTemplate.new("partials/author.html.erb").render(self, person: "hope_isley", pic_extension: :png) %>
                </section>
                <%= Tilt::ERBTemplate.new('partials/article_content.html.erb').render(self, article_name: "march_madness") %>
                <div id="bryan-ncaa-bracket">
