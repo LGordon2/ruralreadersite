@@ -3,7 +3,7 @@
    <head>
       <title>Rural Reader</title>
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-      <link rel="stylesheet" type="text/css" href="css/reader.min.css" media="all">
+      <link rel="stylesheet" type="text/css" href="css/reader.css" media="all">
 
       <!-- Latest compiled and minified CSS -->
       <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
@@ -16,7 +16,7 @@
       <script src="js/reader.min.js"></script>
    </head>
    <body data-spy="scroll" data-target=".affix">
-
+      <span id="top"></span>
       <div id="header-img">
         <img src="pictures/header-logo.png">
       </div>
@@ -32,7 +32,7 @@
             <li><a href="#recipe">Recipe</a></li>
             <li><a href="#gso-local-events">Announcements</a></li>
          </ul>
-         <a class="back-to-top" href="#header-img">Top</a>
+         <a class="back-to-top" href="#top">Top</a>
       </div>
       <div class="container">
          <div id="main-content">
@@ -42,13 +42,7 @@
                  <div class="author-section">
    <div class="avatar">
      
-     
-     <div class="multi-avatar" style="background-image: url(pictures/avatars/alissa_taylor.jpg);">
-     </div>
-     
-     <div class="multi-avatar" style="background-image: url(pictures/avatars/john_martin.jpg);">
-     </div>
-     
+       <img src="pictures/avatars/alissa_taylor_john_martin.jpg">
      
    </div>
    <div class="author-name">
@@ -85,6 +79,7 @@
       <div class="header-img">
         <video autoplay loop>
           <source src="pictures/videos/caleb_brough.mp4" type="video/mp4" />
+          <source src="pictures/videos/caleb_brough.webm" type="video/webm" />
         </video>
       </div>
       <div class="facts">
@@ -97,6 +92,7 @@
       <div class="header-img">
         <video autoplay loop>
           <source src="pictures/videos/david_quach.mp4" type="video/mp4" />
+          <source src="pictures/videos/david_quach.webm" type="video/webm" />
         </video>
       </div>
       <div class="facts">
@@ -111,6 +107,7 @@
       <div class="header-img">
         <video autoplay loop>
           <source src="pictures/videos/jeff_dudelston.mp4" type="video/mp4" />
+          <source src="pictures/videos/jeff_dudelston.webm" type="video/webm" />
         </video>
       </div>
       <div class="facts">
@@ -124,6 +121,7 @@
       <div class="header-img">
         <video autoplay loop>
           <source src="pictures/videos/john_doll.mp4" type="video/mp4" />
+          <source src="pictures/videos/john_doll.webm" type="video/webm" />
         </video>
       </div>
       <div class="facts">
@@ -138,6 +136,7 @@
       <div class="header-img">
         <video autoplay loop>
           <source src="pictures/videos/kevin_munro.mp4" type="video/mp4" />
+          <source src="pictures/videos/kevin_munro.webm" type="video/webm" />
         </video>
       </div>
       <div class="facts">
@@ -150,12 +149,28 @@
       <div class="header-img">
         <video autoplay loop>
           <source src="pictures/videos/josh_jackson.mp4" type="video/mp4" />
+          <source src="pictures/videos/josh_jackson.webm" type="video/webm" />
         </video>
       </div>
       <div class="facts">
         <h4>Joshua Jackson</h4>
         <span>Background - University of North Carolina at Greensboro - English</span>
         <span>Loves to learn useless knowledge and writes action adventure novels.</span>
+      </div>
+    </div>
+  </div>
+  <div class="new-employee-card-row">
+    <div class="card new-employee-card">
+      <div class="header-img">
+        <video autoplay loop>
+          <source src="pictures/videos/gabriel_jackson.mp4" type="video/mp4" />
+          <source src="pictures/videos/gabriel_jackson.webm" type="video/webm" />
+        </video>
+      </div>
+      <div class="facts">
+        <h4>Gabriel Jackson</h4>
+        <span>Bachelors degree in computer science</span>
+        <span>He has been a gamer since he was four years old. PC geek.</span>
       </div>
     </div>
   </div>
@@ -1759,6 +1774,13 @@ March 24th">
                  <img src="pictures/avatars/alissa_taylor.jpg">
                </div>
                <span>Alissa Taylor</span>
+            </div>
+            
+            <div class="volunteer">
+               <div class="avatar">
+                 <img src="pictures/avatars/alissa_taylor_john_martin.JPG">
+               </div>
+               <span>Alissa Taylor John Martin</span>
             </div>
             
             <div class="volunteer">

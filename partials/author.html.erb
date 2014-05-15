@@ -3,10 +3,7 @@
 <div class="author-section">
    <div class="avatar">
      <% if person.length > 1 %>
-     <% person.each_with_index do |p,index| %>
-     <div class="multi-avatar" style="background-image: url(pictures/avatars/<%= "#{p}.#{pic_extension}"%>);">
-     </div>
-     <% end %>
+       <img src="pictures/avatars/<%= "#{person.join("_")}.#{pic_extension}" %>">
      <% else %>
        <img src="pictures/avatars/<%= "#{person.first}.#{pic_extension}" %>">
      <% end %>
