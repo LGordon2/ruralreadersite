@@ -1,0 +1,10 @@
+<div id="comic-section">
+  <h1>Comics</h1>
+  <% Dir["pictures/comics/*"].each do |comic_file| %>
+  <div class="card">
+    <div class="comic">
+      <img src data-echo="<%= comic_file %>">
+    </div>
+  </div>
+  <% end %>
+</div>

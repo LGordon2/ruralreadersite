@@ -271,6 +271,10 @@ div.card {
     transition: max-height 0.3s, padding 0.45s; }
     div.card div.details span {
       display: block; }
+  div.card div.comic {
+    text-align: center; }
+    div.card div.comic img {
+      width: 100%; }
 
 #guess-who-facts {
   text-align: left; }
