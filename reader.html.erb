@@ -193,7 +193,7 @@
       <div id="volunteer-section" class="container">
          <h3>Thank you to the Newsletter Committee and all volunteers who helped us put together our Fourth Edition of "The Rural Reader":</h3>
          <div class="volunteers">
-            <% Dir["pictures/avatars/*"].each do |person_file| %>
+            <% Dir["pictures/avatars/*"].reject{|pic_file| pic_file.split("/").last.count("_") > 1}.each do |person_file| %>
             <div class="volunteer">
                <div class="avatar">
                  <img src="<%= person_file %>">
