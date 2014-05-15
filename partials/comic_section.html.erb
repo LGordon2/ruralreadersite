@@ -2,6 +2,13 @@
   <h1>Comics</h1>
   <% Dir["pictures/comics/*"].each do |comic_file| %>
   <div class="card">
+    <% if comic_file.include? "xkcd" %>
+    <div class="comic" data-original-title="This is how
+    I explain computer
+    problems to my cat.
+    My cat usually seems
+    happier than me." data-toggle="tooltip" data-placement="right">
+    <% end %>
     <div class="comic">
       <img src="pictures/blank.gif" data-echo="<%= comic_file %>">
     </div>

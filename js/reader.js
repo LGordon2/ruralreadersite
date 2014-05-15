@@ -128,5 +128,5 @@ $(function() {
       }
     }
   });
-  $('.close-picture,span#guess-who-link').tooltip();
+  $('.close-picture,span#guess-who-link,div.comic').tooltip();
 });
