@@ -130,5 +130,5 @@ $(function() {
       }
     }
   });
-  $('.close-picture').tooltip();
+  $('.close-picture,span#guess-who-link').tooltip();
 });

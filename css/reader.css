@@ -285,3 +285,8 @@ div.card {
     padding: 10px 20px; }
     .new-employee-card-row .card.new-employee-card .facts span {
       display: block; }
+
+#hidden-guess-who-link {
+  color: black; }
+  #hidden-guess-who-link:hover {
+    text-decoration: underline; }

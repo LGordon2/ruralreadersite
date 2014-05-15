@@ -383,3 +383,9 @@ div.card{
     }
   }
 }
+#hidden-guess-who-link{
+  color: black;
+  &:hover{
+    text-decoration: underline;
+  }
+}
