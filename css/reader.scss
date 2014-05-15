@@ -14,15 +14,6 @@ img
     width: inherit;
   }
 }
-.picture-placeholder {
-  border: black 1px solid;
-  width: 250px;
-  height: 300px;
-  text-align: center;
-  margin: 5px;
-  background-image: url("http://classyfrieds.com/wp-content/uploads/classyfrieds/admin/hond-puppy.jpg");
-  display: inline-block;
-}
 img.grid-picture,img.participant-picture,figure.close-picture > img
 {
   -moz-transition: opacity 1s ease;
